@@ -24,7 +24,7 @@ import org.testng.annotations.Parameters;
 import com.beust.jcommander.Parameter;
 
 public class BaseClass {
-	//contains reusable methods, which can be used by other test case classes
+	//Contains reusable methods, which can be used by other test case classes
 	//in future we we found that a method is frequently used in many test case classes..
 	//we can put that method in base class
 	
