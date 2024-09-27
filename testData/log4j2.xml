@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<Configuration status = "WARN">
+
+  <Properties>
+    <Property name="basepath">./logs</Property>
+  </Properties>
+  
+  <Appenders>
+  
+  <Console name="CONSOLE">
+    <PatternLayout pattern="%d %m%n"/>
+  </Console>
+  
+  <File name="FILE" fileName="${filename}">
+    <PatternLayout pattern="%d %p %C{1.} [%t] %m%n"/>
+  </File>
+  
+</Appenders>
+
+<Loggers>
+  <Root level="info">
+     <!--<AppenderRef ref="FILE" /> we can print log on both file 
+     and cosole simmultaneouly by using AppenderRef twice -->
+    <AppenderRef ref="FILE" />
+  </Root>
+</Loggers>
+  
+  
+  
+  
+  
+  
+  
+  
+</Configuration>
