@@ -61,7 +61,12 @@ public class BaseClass {
 		logger = LogManager.getLogger(this.getClass());
 		
 		//this line automatically loads the log4j2.xml file
-		//this.getClass(): Returns the runtime class of this Object
+		//this.getClass(): jo class logger use kr rhi hogi wo logs m print ho jaygi...ager child classes logger use kregi to
+		//..logs m child class ka naam print hoga..phir child class ke logs print honge..ye same logger parent clild sab use krenge
+
+        //ager hum logger = LogManager.getLogger(BaseClass.Class); use krte to jab child class ke logs print hote to usse phle
+		//...parent class ka naam print hota..na ki child class ka	
+			
 		//now we can generate logs for given test case class using...
 		//'logger' reference variable
 		
